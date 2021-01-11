@@ -1,0 +1,99 @@
+.main__sectionAnonymous {
+  position: relative;
+  background: url("../images/cover.jpg");
+  background-size: cover;
+  top: 0;
+  @include frame(568px, 320px);
+}
+
+.main__sectionAnonymous--title {
+  color: $color-white;
+  font-family: $font-second;
+  @include fonts(42px, 55px, bold);
+  text-transform: uppercase;
+}
+
+.main__sectionAnonymous--paragraph {
+  color: $color-white;
+  font-family: $font-main;
+  font-size: 16px;
+}
+
+.main__sectionAnonymous--button{
+  background-color: $bg-color-white;
+  @include frame(45px, 45px);
+  border: 0px;
+  border-radius: 50%;
+  @include fonts(16px, 30px, normal);
+  font-family: $font-main;
+}
+
+.main__sectionWindow {
+  @include frame(376px, 320px);
+}
+
+.main__sectionWindow--insomnia {
+  color: $color-lightblue;
+  font-family: $font-main;
+  @include fonts(14px, 30px, normal);
+}
+
+.main__sectionWindow--title {
+  color: $color-black;
+  @include fonts(24px, 30px, bold);
+  text-transform: capitalize;
+}
+
+.main__sectionWindow--paragraph {
+  color: $color-greyish-brown;
+  font-family: $font-main;
+  @include fonts(18px, 30px, normal);
+  @include frame(120px, 290px);
+}
+
+.main__sectionWindow--button {
+  border: solid 2px $color-orange;
+  border-radius: 22.5px;
+  color: $color-orange;
+  @include frame(45px, 76px);
+  margin: 30px 229px 45px 15px;
+  font-family: $font-main;
+  @include fonts(20px, 45px, normal);
+  background-color: $bg-color-white;
+}
+
+.main__sectionReasons {
+  background-color: $bg-color-reasons;
+  @include frame(624px, 320px);
+}
+
+.main__sectionReasons--title {
+  color: $color-black;
+  @include fonts(24px, 30px, bold); /* text already bold */
+  text-transform: capitalize;
+}
+
+.sectionReasons__container {
+  margin-top: 45px;
+  @include fonts(18px, 30px, normal);
+}
+
+.sectionReasons__container--title {
+  font-family: $font-second;
+}
+
+.sectionReasons__container--paragraph {
+  font-family: $font-main;
+  @include frame(63px, 180px);
+}
+
+.sectionReasons__button {
+  border: solid 0px;
+  border-radius: 22.5px;
+  color: $color-white;
+  background-color: $bg-color-orange;
+  @include frame(45px, 184px);
+  margin: 45px 229px 45px 15px;
+  font-family: $font-main;
+  @include fonts(20px, 45px, normal);
+}

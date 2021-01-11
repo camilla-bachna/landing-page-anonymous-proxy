@@ -1,0 +1,33 @@
+.footer {
+  background-color: $bg-color-footer;
+  @include frame(465px, 320px);
+  @include fonts(16px, 30px, normal);
+  color: $color-white;
+  font-family: $font-main;
+}
+
+.footer__button {
+  background-color: $bg-color-white;
+  @include frame(45px, 45px);
+  border: 0px;
+  border-radius: 50%;
+  @include fonts(16px, 30px, normal);
+  font-family: $font-main;
+}
+
+.footer__nav {
+  text-transform: uppercase;
+}
+
+.navList__item--link {
+  text-decoration: none;
+}
+
+a.navList__item--link:visited {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.icon {
+  color: $color-orange;
+}

@@ -1,0 +1,32 @@
+//fonts
+
+$font-main: "Roboto", sans-serif; /*third color*/
+$font-second: "Roboto Slab", serif;
+
+//colors
+
+$color-white: #ffffff;
+$color-lightblue: #8ccbea;
+$color-black: #000000;
+$color-greyish-brown: #4a4a4a;
+$color-orange: #f26002;
+
+//background-colors
+
+$bg-color-reasons: #eff9ff;
+$bg-color-footer: #304268;
+$bg-color-orange: #f26002;
+$bg-color-white: #ffffff;
+
+//Mixin
+
+@mixin fonts($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin frame($height, $width) {
+  height: $height;
+  width: $width;
+}

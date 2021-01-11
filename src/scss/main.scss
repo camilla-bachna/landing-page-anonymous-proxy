@@ -11,34 +11,9 @@
 
 @import "layout/page";
 @import "layout/header";
+@import "layout/main";
 @import "layout/footer";
 
 // Pages
 
 @import "pages/index";
-
-.main__sectionAnonymous {
-  position: relative;
-  background: url("../images/cover.jpg");
-  background-size: cover;
-  top: 0;
-  width: 320px;
-  height: 568px;
-}
-
-.main__sectionWindow {
-  width: 320px;
-  height: 376px;
-}
-
-.main__sectionReasons {
-  background-color: #eff9ff;
-  width: 320px;
-  height: 624px;
-}
-
-footer {
-  background-color: #304268;
-  width: 320px;
-  height: 465px;
-}
