@@ -2,9 +2,9 @@
 
 .main__sectionAnonymous {
   position: relative;
-  background: url("../images/cover.jpg");
-  background-size: cover;
   top: 0;
+  background: url("../images/cover-original.jpg");
+  background-size: cover;
   @include frame(100vh, 100%);
   display: flex;
   flex-direction: column;
@@ -14,19 +14,21 @@
   &--title {
     color: $color-white;
     font-family: $font-second;
-    @include fonts(42px, 55px, bold); /* change all bold */
+    @include fonts(42px, 55px, normal);
     @include frame(110px, 290px);
     margin: 284px 15px 10px 15px;
     text-transform: uppercase;
     @media all and (min-width: 768px) {
-      @include fonts(80px, 106px, bold); /* change all bold */
+      @include fonts(80px, 106px, normal);
       @include frame(212px, 690px);
       margin: 384px 39px 20px 39px;
+      /*  background: url("../images/cover-tablet.jpg"); */
     }
     @media all and (min-width: 1200px) {
-      @include fonts(100px, 132px, bold);
+      @include fonts(100px, 132px, normal);
       @include frame(264px, 730px);
       margin: 384px 275px 0px 275px;
+      /* background: url("../images/cover-desktop.jpg"); */
     }
   }
   &--paragraph {
@@ -94,18 +96,18 @@
   }
   &--title {
     color: $color-black;
-    @include fonts(24px, 30px, bold);
+    @include fonts(24px, 30px, normal);
     @include frame(60px, 290px);
     margin: 0px 15px 15px 0px;
     text-transform: capitalize;
     @media all and (min-width: 768px) {
       @include frame(45px, 690px);
       margin: 0px 0px 30px 0px;
-      @include fonts(26px, 45px, bold);
+      @include fonts(26px, 45px, normal);
     }
     @media all and (min-width: 1200px) {
       @include frame(45px, 730px);
-      @include fonts(32px, 45px, bold);
+      @include fonts(32px, 45px, normal);
     }
   }
   &--paragraph {
@@ -132,6 +134,12 @@
     font-family: $font-main;
     @include fonts(20px, 45px, bold);
     background-color: $bg-color-white;
+    transition: color 1s, background-color 1s, border 1s;
+    &:hover {
+      background-color: $bg-color-footer;
+      border: solid 2px $bg-color-footer;
+      color: $color-white;
+    }
     @media all and (min-width: 768px) {
       @include frame(45px, 91px);
       margin: 0px 599px 0px 0px;
@@ -149,9 +157,9 @@
   background-color: $bg-color-reasons;
   color: $color-black;
   @include frame(624px, 320px);
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     @include frame(397px, 768px);
   }
   @media all and (min-width: 1200px) {
@@ -160,15 +168,15 @@
   &--title {
     grid-column: 1/4;
     font-family: $font-second;
-    @include fonts(24px, 30px, bold); /* text already bold */
+    @include fonts(24px, 30px, normal);
     text-transform: capitalize;
     @include frame(30px, 290px);
     margin: 30px 15px 45px 15px;
     text-align: center;
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       @include frame(45px, 450px);
       margin: 30px 160px 45px 158px;
-      @include fonts(26px, 45px, bold);
+      @include fonts(26px, 45px, normal);
     }
     @media all and (min-width: 1200px) {
       @include frame(45px, 730px);
@@ -177,18 +185,18 @@
   }
 }
 
-.sectionReasons__container1{
+.sectionReasons__container1 {
   @include fonts(18px, 30px, normal);
-  grid-column: 1/4; 
-  @media (min-width:768px) {
-      grid-column: 1 / 2;
-    }
+  grid-column: 1/4;
+  @media (min-width: 768px) {
+    grid-column: 1 / 2;
+  }
   &--title {
     font-family: $font-second;
     text-align: center;
     @include frame(30px, 184px);
     margin: 0 68px 0 68px;
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       @include frame(30px, 210px);
       @include fonts(24px, 30px, normal);
       margin: 0 30px 14px 38px;
@@ -203,7 +211,7 @@
     @include frame(63px, 180px);
     margin: 0 70px 45px 70px;
     text-align: center;
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       @include frame(68px, 212.3px);
       @include fonts(20px, 30px, normal);
       margin: 0 27.7px 60px 35.7px;
@@ -215,10 +223,10 @@
   }
 }
 
-.sectionReasons__container2{
+.sectionReasons__container2 {
   @include fonts(18px, 30px, normal);
   grid-column: 1/4;
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     grid-column: 2 / 3;
   }
   &--title {
@@ -226,7 +234,7 @@
     text-align: center;
     @include frame(30px, 184px);
     margin: 0 68px 0 68px;
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       @include frame(30px, 210px);
       @include fonts(24px, 30px, normal);
       margin: 0 30px 14px 0px;
@@ -240,7 +248,7 @@
     @include frame(63px, 180px);
     margin: 0 70px 45px 70px;
     text-align: center;
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       @include frame(68px, 212.3px);
       @include fonts(20px, 30px, normal);
       margin: 0 27.7px 60px 0px;
@@ -252,10 +260,10 @@
   }
 }
 
-.sectionReasons__container3{
+.sectionReasons__container3 {
   @include fonts(18px, 30px, normal);
   grid-column: 1/4;
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     grid-column: 3 / 4;
   }
   &--title {
@@ -263,7 +271,7 @@
     text-align: center;
     @include frame(30px, 184px);
     margin: 0 68px 0 68px;
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       @include frame(30px, 210px);
       @include fonts(24px, 30px, normal);
       margin: 0 40px 14px 0px;
@@ -278,7 +286,7 @@
     @include frame(63px, 180px);
     margin: 0 70px 45px 70px;
     text-align: center;
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       @include frame(68px, 212.3px);
       @include fonts(20px, 30px, normal);
       margin: 0 40px 60px 0px;
@@ -298,11 +306,17 @@
   @include frame(45px, 184px);
   margin: 0px 68px 60px 68px;
   font-family: $font-main;
-  @include fonts(20px, 45px, normal);
+  @include fonts(20px, 45px, bold);
   grid-column: 1/4;
-  @media (min-width:768px) {
+  transition: background-color 1s, font-size 1s, height 1s, width 1s;
+  &:hover {
+    background-color: $bg-color-footer;
+    @include frame(55px, 184px);
+    font-size: 22px;
+  }
+  @media (min-width: 768px) {
     @include frame(45px, 210px);
-    margin: 0px 322.5px 60px 321.5px;
+    margin: 0px 278px 60px 280px;
   }
   @media all and (min-width: 1200px) {
     @include frame(45px, 255px);

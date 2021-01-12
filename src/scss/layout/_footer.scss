@@ -21,6 +21,30 @@
     transform: translate(0, -50%);
     margin: 0 137px 37px 138px;
     box-shadow: 0 2px 4px 0;
+    animation-duration:6s;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @keyframes arrow {
+      from {
+        background-color: $bg-color-white;
+        border-radius: 50%;
+      }
+      25% {
+        border-radius: 25%;
+      }
+      50% {
+        background-color: $bg-color-header;
+        border-radius: 0%;
+      }
+      75% {
+        border-radius: 25%;
+      }
+      100% {
+        background-color: $bg-color-header;
+        border-radius: 50%;
+      }
+    }
     @media all and (min-width: 768px) {
       margin: 0 361px 22px 362px;
     }
