@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; 
+  text-align: center;
   &--title {
     color: $color-white;
     font-family: $font-second;
@@ -22,96 +22,143 @@
       margin: 384px 39px 20px 39px;
     }
     @media all and (min-width: 1200px) {
-      @include fonts(100px, 132px, bold); 
+      @include fonts(100px, 132px, bold);
       @include frame(264px, 730px);
       margin: 384px 275px 0px 275px;
     }
   }
   &--paragraph {
-  color: $color-white;
-  font-family: $font-main;
-  font-size: 16px;
-  @include frame(21px, 290px);
-  margin: 0px 15px 45px 15px;
-  @media all and (min-width: 768px) {
-    font-size: 24px; 
-    @include frame(32px, 360px);
-    margin: 0px 204px 30px 204px;
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 16px;
+    @include frame(21px, 290px);
+    margin: 0px 15px 45px 15px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      @include frame(32px, 360px);
+      margin: 0px 204px 30px 204px;
+    }
+    @media all and (min-width: 1200px) {
+      @include frame(32px, 730px);
+      margin: 0px 275px 30px 275px;
+    }
   }
-  @media all and (min-width: 1200px) { 
-    @include frame(32px, 730px);
-    margin: 0px 275px 30px 275px;
+  &--button {
+    background-color: $bg-color-white;
+    @include frame(45px, 45px);
+    border: 0px;
+    border-radius: 50%;
+    font-family: $font-main;
+    margin: 0px 137px 53px 138px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 768px) {
+      margin: 0px 361px 45px 362px;
+    }
+    @media all and (min-width: 1200px) {
+      margin: 0px 617px 13px 618px;
+    }
   }
-}
-&--button {
-  background-color: $bg-color-white;
-  @include frame(45px, 45px);
-  border: 0px;
-  border-radius: 50%;
-  font-family: $font-main;
-  margin: 0px 137px 53px 138px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media all and (min-width: 768px) {
-    margin: 0px 361px 45px 362px;
-  }
-  @media all and (min-width: 1200px) { 
-    margin: 0px 617px 13px 618px;
-  }
-}
 }
 
 .main__sectionWindow {
-  @include frame(376px, 320px);
-&--insomnia {
-  color: $color-lightblue;
-  font-family: $font-main;
-  @include fonts(14px, 30px, normal);
-}
-&--title {
-  color: $color-black;
-  @include fonts(24px, 30px, bold);
-  text-transform: capitalize;
-}
-&--paragraph {
-  color: $color-greyish-brown;
-  font-family: $font-main;
-  @include fonts(18px, 30px, normal);
-  @include frame(120px, 290px);
-}
-&--button {
-  border: solid 2px $color-orange;
-  border-radius: 22.5px;
-  color: $color-orange;
-  @include frame(45px, 76px);
-  margin: 30px 229px 45px 15px;
-  font-family: $font-main;
-  @include fonts(20px, 45px, bold);
-  background-color: $bg-color-white;
-}
+  width: 100%;
+  margin: 30px 0px 45px 15px;
+  @media all and (min-width: 768px) {
+    margin: 30px 39px 60px 39px;
+  }
+  @media all and (min-width: 1200px) {
+    margin: 60px 275px 60px 275px;
+  }
+  &--insomnia {
+    color: $color-lightblue;
+    font-family: $font-main;
+    @include fonts(14px, 30px, normal);
+    @include frame(30px, 90px);
+    margin: 0px 200px 1px 0px;
+    text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      @include frame(30px, 216px);
+      margin: 0px 513px 0px 0px;
+    }
+    @media all and (min-width: 1200px) {
+      @include frame(30px, 360px);
+      @include fonts(16px, 30px, normal);
+      margin: 0px 645px 0px 0px;
+    }
+  }
+  &--title {
+    color: $color-black;
+    @include fonts(24px, 30px, bold);
+    @include frame(60px, 290px);
+    margin: 0px 15px 15px 0px;
+    text-transform: capitalize;
+    @media all and (min-width: 768px) {
+      @include frame(45px, 690px);
+      margin: 0px 0px 30px 0px;
+      @include fonts(26px, 45px, bold);
+    }
+    @media all and (min-width: 1200px) {
+      @include frame(45px, 730px);
+      @include fonts(32px, 45px, bold);
+    }
+  }
+  &--paragraph {
+    color: $color-greyish-brown;
+    font-family: $font-main;
+    @include fonts(18px, 30px, normal);
+    @include frame(120px, 290px);
+    margin: 0px 15px 30px 0px;
+    @media all and (min-width: 768px) {
+      @include frame(60px, 690px);
+      margin: 0px 0px 30px 0px;
+      @include fonts(20px, 30px, normal);
+    }
+    @media all and (min-width: 1200px) {
+      @include frame(60px, 730px);
+    }
+  }
+  &--button {
+    border: solid 2px $color-orange;
+    border-radius: 22.5px;
+    color: $color-orange;
+    @include frame(45px, 76px);
+    margin: 0px 229px 0px 0px;
+    font-family: $font-main;
+    @include fonts(20px, 45px, bold);
+    background-color: $bg-color-white;
+    @media all and (min-width: 768px) {
+      @include frame(45px, 91px);
+      margin: 0px 599px 0px 0px;
+    }
+    @media all and (min-width: 1200px) {
+      @include frame(45px, 160px);
+      margin: 0px 570px 0px 0px;
+    }
+  }
 }
 
 .main__sectionReasons {
   background-color: $bg-color-reasons;
   @include frame(624px, 320px);
   &--title {
-  color: $color-black;
-  @include fonts(24px, 30px, bold); /* text already bold */
-  text-transform: capitalize;
-}
+    color: $color-black;
+    @include fonts(24px, 30px, bold); /* text already bold */
+    text-transform: capitalize;
+  }
 }
 
 .sectionReasons__container {
   margin-top: 45px;
   @include fonts(18px, 30px, normal);
   &--title {
-  font-family: $font-second;
-}
-&--paragraph {
-  font-family: $font-main;
-  @include frame(63px, 180px);
-}
+    font-family: $font-second;
+  }
+  &--paragraph {
+    font-family: $font-main;
+    @include frame(63px, 180px);
+  }
 }
 
 .sectionReasons__button {
