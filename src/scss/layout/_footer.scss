@@ -17,7 +17,7 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     transform: translate(0, -50%);
     margin: 0 137px 37px 138px;
     box-shadow: 0 2px 4px 0;
@@ -29,24 +29,34 @@
     }
   }
   &__container {
-    /* display: flex;
-    flex-direction: row;  */
-    /* justify-content: center;
-    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: -14.5px;
     @media all and (min-width: 768px) {
-      /* display: flex;
-      flex-direction: row; */
-    }
-    @media all and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
     }
     &--nav1 {
       text-transform: uppercase;
       margin-bottom: 30px;
+      @media all and (min-width: 768px) {
+        @include frame(150px, 210px);
+        margin: 22px 30px 45px 0px;
+      }
+      @media all and (min-width: 1200px) {
+      }
     }
     &--nav2 {
       text-transform: uppercase;
       margin-bottom: 30px;
+      @media all and (min-width: 768px) {
+        @include frame(90px, 210px);
+        margin: 22px 39px 105px 0px;
+      }
+      @media all and (min-width: 1200px) {
+      }
     }
   }
 }
@@ -54,6 +64,11 @@
   list-style-type: none;
   &__item {
     text-align: center;
+    @media all and (min-width: 768px) {
+      text-align: left;
+    }
+    @media all and (min-width: 1200px) {
+    }
     &--link {
       color: $color-white;
       text-decoration: none;
@@ -63,12 +78,19 @@
       }
     }
   }
+  @media all and (min-width: 768px) {
+  }
 }
 
 .navList2 {
   list-style-type: none;
   &__item {
     text-align: center;
+    @media all and (min-width: 768px) {
+      text-align: left;
+    }
+    @media all and (min-width: 1200px) {
+    }
     &--link {
       color: $color-white;
       text-decoration: none;
@@ -81,10 +103,21 @@
 }
 
 .footer__copy {
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  @media all and (min-width: 768px) {
+    order: -1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include frame(60px, 210px);
+    margin: 30.5px 30px 142px 39px;
+  }
+  @media all and (min-width: 1200px) {
+    @include frame(60px, 159px);
+    margin: 30.5px 31px 135px 370px;
+  }
   &-2021 {
     @include frame(30px, 77px);
     @include fonts(14px, 30px, normal);
