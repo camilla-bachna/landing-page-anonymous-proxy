@@ -46,6 +46,8 @@
         margin: 22px 30px 45px 0px;
       }
       @media all and (min-width: 1200px) {
+        @include frame(150px, 161px);
+        margin: 22px 30px 45px 0px;
       }
     }
     &--nav2 {
@@ -56,6 +58,8 @@
         margin: 22px 39px 105px 0px;
       }
       @media all and (min-width: 1200px) {
+        @include frame(90px, 159px);
+        margin: 22px 370px 105px 0px;
       }
     }
   }
