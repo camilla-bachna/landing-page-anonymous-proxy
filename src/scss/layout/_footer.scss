@@ -4,27 +4,96 @@
   @include fonts(16px, 30px, normal);
   color: $color-white;
   font-family: $font-main;
-&__button {
-  background-color: $bg-color-white;
-  @include frame(45px, 45px);
-  border: 0px;
-  border-radius: 50%;
-  @include fonts(16px, 30px, normal);
-  font-family: $font-main;
+  @media all and (min-width: 768px) {
+    @include frame(240px, 768px);
+  }
+  @media all and (min-width: 1200px) {
+    @include frame(240px, 1280px);
+  }
+  &__button {
+    background-color: $bg-color-white;
+    @include frame(45px, 45px);
+    border: 0px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transform: translate(0, -50%);
+    margin: 0 137px 37px 138px;
+    box-shadow: 0 2px 4px 0;
+    @media all and (min-width: 768px) {
+      margin: 0 361px 22px 362px;
+    }
+    @media all and (min-width: 1200px) {
+      margin: 0 617px 22px 618px;
+    }
+  }
+  &__container {
+    /* display: flex;
+    flex-direction: row;  */
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: -14.5px;
+    @media all and (min-width: 768px) {
+      /* display: flex;
+      flex-direction: row; */
+    }
+    @media all and (min-width: 1200px) {
+    }
+    &--nav1 {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    &--nav2 {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  }
 }
-&__nav {
-  text-transform: uppercase;
-}
-}
-.navList__item--link {
-  text-decoration: none;
+.navList1 {
+  list-style-type: none;
+  &__item {
+    text-align: center;
+    &--link {
+      color: $color-white;
+      text-decoration: none;
+      &:visited {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  }
 }
 
-a.navList__item--link:visited {
-  text-decoration: none;
-  color: $color-white;
+.navList2 {
+  list-style-type: none;
+  &__item {
+    text-align: center;
+    &--link {
+      color: $color-white;
+      text-decoration: none;
+      &:visited {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  }
 }
 
-.icon {
-  color: $color-orange;
+.footer__copy {
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  &-2021 {
+    @include frame(30px, 77px);
+    @include fonts(14px, 30px, normal);
+  }
+  &--components {
+    @include fonts(14px, 30px, normal);
+    margin-bottom: 45px;
+  }
+  &--icon {
+    color: $color-orange;
+  }
 }
