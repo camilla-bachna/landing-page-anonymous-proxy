@@ -3,13 +3,20 @@
   background: url("../images/cover.jpg");
   background-size: cover;
   top: 0;
-  @include frame(568px, 320px);
+  @include frame(100vh, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* goes down middle of page right side*/
+  align-items: center;
+  text-align: center; /* goes to right in middle of page */
 }
 
 .main__sectionAnonymous--title {
   color: $color-white;
   font-family: $font-second;
   @include fonts(42px, 55px, bold);
+  @include frame(110px, 290px);
+  margin: 284px 15px 10px 15px;
   text-transform: uppercase;
 }
 
@@ -17,15 +24,18 @@
   color: $color-white;
   font-family: $font-main;
   font-size: 16px;
+  margin: 0px 15px 45px 15px;
 }
 
-.main__sectionAnonymous--button{
+.main__sectionAnonymous--button {
   background-color: $bg-color-white;
   @include frame(45px, 45px);
   border: 0px;
   border-radius: 50%;
   @include fonts(16px, 30px, normal);
   font-family: $font-main;
+  text-align: center;
+  margin: 0px 137px 53px 138px;
 }
 
 .main__sectionWindow {
