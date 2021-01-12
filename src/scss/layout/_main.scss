@@ -142,6 +142,8 @@
 .main__sectionReasons {
   background-color: $bg-color-reasons;
   @include frame(624px, 320px);
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
   &--title {
     color: $color-black;
     @include fonts(24px, 30px, bold); /* text already bold */
@@ -149,15 +151,32 @@
   }
 }
 
-.sectionReasons__container {
+.main__sectionReasons--title {
+  grid-column: 1/4;
+}
+
+.sectionReasons__container1, .sectionReasons__container2, .sectionReasons__container3 {
   margin-top: 45px;
   @include fonts(18px, 30px, normal);
+  grid-column: 1/4;
   &--title {
     font-family: $font-second;
   }
   &--paragraph {
     font-family: $font-main;
     @include frame(63px, 180px);
+  }
+}
+
+@media (min-width:768px) {
+  .sectionReasons__container1{
+    grid-column: 1 / 2;
+  }
+  .sectionReasons__container2{
+    grid-column: 2 / 3;
+  }
+  .sectionReasons__container3{
+    grid-column: 3 / 4;
   }
 }
 
@@ -170,4 +189,5 @@
   margin: 45px 229px 45px 15px;
   font-family: $font-main;
   @include fonts(20px, 45px, normal);
+  grid-column: 1/4;
 }
