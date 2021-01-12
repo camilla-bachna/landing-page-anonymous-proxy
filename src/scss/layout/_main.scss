@@ -6,95 +6,112 @@
   @include frame(100vh, 100%);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* goes down middle of page right side*/
+  justify-content: center;
   align-items: center;
-  text-align: center; /* goes to right in middle of page */
-}
-
-.main__sectionAnonymous--title {
-  color: $color-white;
-  font-family: $font-second;
-  @include fonts(42px, 55px, bold);
-  @include frame(110px, 290px);
-  margin: 284px 15px 10px 15px;
-  text-transform: uppercase;
-}
-
-.main__sectionAnonymous--paragraph {
+  text-align: center; 
+  &--title {
+    color: $color-white;
+    font-family: $font-second;
+    @include fonts(42px, 55px, bold); /* change all bold */
+    @include frame(110px, 290px);
+    margin: 284px 15px 10px 15px;
+    text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      @include fonts(80px, 106px, bold); /* change all bold */
+      @include frame(212px, 690px);
+      margin: 384px 39px 20px 39px;
+    }
+    @media all and (min-width: 1200px) {
+      @include fonts(100px, 132px, bold); 
+      @include frame(264px, 730px);
+      margin: 384px 275px 0px 275px;
+    }
+  }
+  &--paragraph {
   color: $color-white;
   font-family: $font-main;
   font-size: 16px;
+  @include frame(21px, 290px);
   margin: 0px 15px 45px 15px;
+  @media all and (min-width: 768px) {
+    font-size: 24px; 
+    @include frame(32px, 360px);
+    margin: 0px 204px 30px 204px;
+  }
+  @media all and (min-width: 1200px) { 
+    @include frame(32px, 730px);
+    margin: 0px 275px 30px 275px;
+  }
 }
-
-.main__sectionAnonymous--button {
+&--button {
   background-color: $bg-color-white;
   @include frame(45px, 45px);
   border: 0px;
   border-radius: 50%;
-  @include fonts(16px, 30px, normal);
   font-family: $font-main;
-  text-align: center;
   margin: 0px 137px 53px 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    margin: 0px 361px 45px 362px;
+  }
+  @media all and (min-width: 1200px) { 
+    margin: 0px 617px 13px 618px;
+  }
+}
 }
 
 .main__sectionWindow {
   @include frame(376px, 320px);
-}
-
-.main__sectionWindow--insomnia {
+&--insomnia {
   color: $color-lightblue;
   font-family: $font-main;
   @include fonts(14px, 30px, normal);
 }
-
-.main__sectionWindow--title {
+&--title {
   color: $color-black;
   @include fonts(24px, 30px, bold);
   text-transform: capitalize;
 }
-
-.main__sectionWindow--paragraph {
+&--paragraph {
   color: $color-greyish-brown;
   font-family: $font-main;
   @include fonts(18px, 30px, normal);
   @include frame(120px, 290px);
 }
-
-.main__sectionWindow--button {
+&--button {
   border: solid 2px $color-orange;
   border-radius: 22.5px;
   color: $color-orange;
   @include frame(45px, 76px);
   margin: 30px 229px 45px 15px;
   font-family: $font-main;
-  @include fonts(20px, 45px, normal);
+  @include fonts(20px, 45px, bold);
   background-color: $bg-color-white;
+}
 }
 
 .main__sectionReasons {
   background-color: $bg-color-reasons;
   @include frame(624px, 320px);
-}
-
-.main__sectionReasons--title {
+  &--title {
   color: $color-black;
   @include fonts(24px, 30px, bold); /* text already bold */
   text-transform: capitalize;
+}
 }
 
 .sectionReasons__container {
   margin-top: 45px;
   @include fonts(18px, 30px, normal);
-}
-
-.sectionReasons__container--title {
+  &--title {
   font-family: $font-second;
 }
-
-.sectionReasons__container--paragraph {
+&--paragraph {
   font-family: $font-main;
   @include frame(63px, 180px);
+}
 }
 
 .sectionReasons__button {
