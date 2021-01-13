@@ -79,20 +79,21 @@
     font-family: $font-main;
     @include fonts(14px, 30px, normal);
     @include frame(30px, 90px);
-    margin: 0px 200px 1px 0px;
+    margin: 0px 215px 1px 0px;
     text-transform: capitalize;
     @media all and (min-width: 768px) {
       @include frame(30px, 216px);
-      margin: 0px 513px 0px 0px;
+      margin: 0px 474px 0px 0px;
     }
     @media all and (min-width: 1200px) {
       @include frame(30px, 360px);
       @include fonts(16px, 30px, normal);
-      margin: 0px 645px 0px 0px;
+      margin: 0px 370px 0px 0px;
     }
   }
   &--title {
     color: $color-black;
+    font-family: $font-second;
     @include fonts(24px, 30px, normal);
     @include frame(60px, 290px);
     margin: 0px 15px 15px 0px;
