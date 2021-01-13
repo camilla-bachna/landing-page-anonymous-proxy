@@ -52,7 +52,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -45px;
+    top: -47px; /* 45px button and 2px shadow */
     @media all and (min-width: 768px) {
       display: flex;
       flex-direction: row;
@@ -95,6 +95,8 @@
     @media all and (min-width: 1200px) {
     }
     &--link {
+      padding-left: 15px;
+      padding-right: 15px;
       color: $color-white;
       text-decoration: none;
       &:visited {
@@ -117,6 +119,8 @@
     @media all and (min-width: 1200px) {
     }
     &--link {
+      padding-left: 15px;
+      padding-right: 15px;
       color: $color-white;
       text-decoration: none;
       &:visited {
