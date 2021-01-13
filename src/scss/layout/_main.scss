@@ -22,13 +22,11 @@
       @include fonts(80px, 106px, normal);
       @include frame(212px, 690px);
       margin: 384px 39px 20px 39px;
-      /*  background: url("../images/cover-tablet.jpg"); */
     }
     @media all and (min-width: 1200px) {
       @include fonts(100px, 132px, normal);
       @include frame(264px, 730px);
       margin: 384px 275px 0px 275px;
-      /* background: url("../images/cover-desktop.jpg"); */
     }
   }
   &--paragraph {
