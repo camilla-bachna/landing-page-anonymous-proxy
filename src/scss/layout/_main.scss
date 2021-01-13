@@ -218,7 +218,7 @@
     }
     @media all and (min-width: 1200px) {
       @include frame(68px, 353.8px);
-      margin-left: 0 26.2px 60px 81.2px;
+      margin: 0 26.2px 60px 81.2px;
     }
   }
 }
@@ -255,7 +255,7 @@
     }
     @media all and (min-width: 1200px) {
       @include frame(68px, 353.8px);
-      margin-left: 0 26.2px 60px 0;
+      margin: 0 26.2px 60px 0;
     }
   }
 }
@@ -293,7 +293,7 @@
     }
     @media all and (min-width: 1200px) {
       @include frame(68px, 353.8px);
-      margin-left: 0 85px 60px 0;
+      margin: 0 85px 60px 0;
     }
   }
 }
