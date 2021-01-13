@@ -308,10 +308,9 @@
   font-family: $font-main;
   @include fonts(20px, 45px, bold);
   grid-column: 1/4;
-  transition: background-color 1s, font-size 1s, height 1s, width 1s;
+  transition: background-color 2s, font-size 2s;
   &:hover {
     background-color: $bg-color-footer;
-    @include frame(55px, 184px);
     font-size: 22px;
   }
   @media (min-width: 768px) {
