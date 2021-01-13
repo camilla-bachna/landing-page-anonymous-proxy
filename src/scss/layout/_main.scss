@@ -52,7 +52,6 @@
     @include frame(45px, 45px);
     border: 0px;
     border-radius: 50%;
-    font-family: $font-main;
     margin: 0px 137px 53px 138px;
     display: flex;
     justify-content: center;
@@ -156,31 +155,33 @@
 .main__sectionReasons {
   background-color: $bg-color-reasons;
   color: $color-black;
-  @include frame(624px, 320px);
+  @include frame(624px, 100%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   @media (min-width: 768px) {
-    @include frame(397px, 768px);
+    @include frame(397px, 100%);
   }
   @media all and (min-width: 1200px) {
-    @include frame(427px, 1280px);
+    @include frame(427px, 100%);
   }
   &--title {
     grid-column: 1/4;
     font-family: $font-second;
     @include fonts(24px, 30px, normal);
     text-transform: capitalize;
+    height: 30px;
     @include frame(30px, 290px);
-    margin: 30px 15px 45px 15px;
     text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 45px;
     @media (min-width: 768px) {
       @include frame(45px, 450px);
-      margin: 30px 160px 45px 158px;
       @include fonts(26px, 45px, normal);
     }
     @media all and (min-width: 1200px) {
       @include frame(45px, 730px);
-      margin: 60px 275px 45px 275px;
+      margin-top: 60px;
     }
   }
 }
@@ -188,37 +189,37 @@
 .sectionReasons__container1 {
   @include fonts(18px, 30px, normal);
   grid-column: 1/4;
+  text-align: center;
+  margin: auto;
   @media (min-width: 768px) {
     grid-column: 1 / 2;
   }
   &--title {
     font-family: $font-second;
     text-align: center;
+    margin: auto;
     @include frame(30px, 184px);
-    margin: 0 68px 0 68px;
     @media (min-width: 768px) {
       @include frame(30px, 210px);
       @include fonts(24px, 30px, normal);
-      margin: 0 30px 14px 38px;
+      margin-bottom: 14px;
     }
     @media all and (min-width: 1200px) {
       @include frame(30px, 350px);
-      margin-left: 85px;
     }
   }
   &--paragraph {
     font-family: $font-main;
     @include frame(63px, 180px);
-    margin: 0 70px 45px 70px;
+    margin-bottom: 45px;
     text-align: center;
     @media (min-width: 768px) {
       @include frame(68px, 212.3px);
       @include fonts(20px, 30px, normal);
-      margin: 0 27.7px 60px 35.7px;
+      margin-bottom: 60px;
     }
     @media all and (min-width: 1200px) {
       @include frame(68px, 353.8px);
-      margin: 0 26.2px 60px 81.2px;
     }
   }
 }
@@ -226,18 +227,20 @@
 .sectionReasons__container2 {
   @include fonts(18px, 30px, normal);
   grid-column: 1/4;
+  text-align: center;
+  margin: auto;
   @media (min-width: 768px) {
     grid-column: 2 / 3;
   }
   &--title {
     font-family: $font-second;
     text-align: center;
+    margin: auto;
     @include frame(30px, 184px);
-    margin: 0 68px 0 68px;
     @media (min-width: 768px) {
       @include frame(30px, 210px);
       @include fonts(24px, 30px, normal);
-      margin: 0 30px 14px 0px;
+      margin-bottom: 14px;
     }
     @media all and (min-width: 1200px) {
       @include frame(30px, 350px);
@@ -246,16 +249,15 @@
   &--paragraph {
     font-family: $font-main;
     @include frame(63px, 180px);
-    margin: 0 70px 45px 70px;
+    margin-bottom: 45px;
     text-align: center;
     @media (min-width: 768px) {
       @include frame(68px, 212.3px);
       @include fonts(20px, 30px, normal);
-      margin: 0 27.7px 60px 0px;
+      margin-bottom: 60px;
     }
     @media all and (min-width: 1200px) {
       @include frame(68px, 353.8px);
-      margin: 0 26.2px 60px 0;
     }
   }
 }
@@ -263,37 +265,37 @@
 .sectionReasons__container3 {
   @include fonts(18px, 30px, normal);
   grid-column: 1/4;
+  text-align: center;
+  margin: auto;
   @media (min-width: 768px) {
     grid-column: 3 / 4;
   }
   &--title {
     font-family: $font-second;
     text-align: center;
+    margin: auto;
     @include frame(30px, 184px);
-    margin: 0 68px 0 68px;
     @media (min-width: 768px) {
       @include frame(30px, 210px);
       @include fonts(24px, 30px, normal);
-      margin: 0 40px 14px 0px;
+      margin-bottom: 14px;
     }
     @media all and (min-width: 1200px) {
       @include frame(30px, 350px);
-      margin-right: 85px;
     }
   }
   &--paragraph {
     font-family: $font-main;
     @include frame(63px, 180px);
-    margin: 0 70px 45px 70px;
+    margin-bottom: 45px;
     text-align: center;
     @media (min-width: 768px) {
       @include frame(68px, 212.3px);
       @include fonts(20px, 30px, normal);
-      margin: 0 40px 60px 0px;
+      margin-bottom: 60px;
     }
     @media all and (min-width: 1200px) {
       @include frame(68px, 353.8px);
-      margin: 0 85px 60px 0;
     }
   }
 }
@@ -303,11 +305,13 @@
   border-radius: 22.5px;
   color: $color-white;
   background-color: $bg-color-orange;
+  text-align: center;
+  margin: auto;
   @include frame(45px, 184px);
-  margin: 0px 68px 60px 68px;
+  margin-bottom: 60px;
   font-family: $font-main;
   @include fonts(20px, 45px, bold);
-  grid-column: 1/4;
+  grid-column: 1 / 4;
   transition: background-color 2s, font-size 2s;
   &:hover {
     background-color: $bg-color-footer;
@@ -315,10 +319,10 @@
   }
   @media (min-width: 768px) {
     @include frame(45px, 210px);
-    margin: 0px 278px 60px 280px;
+    grid-column: 2 / 3;
+    margin-bottom: 60px;
   }
   @media all and (min-width: 1200px) {
     @include frame(45px, 255px);
-    margin: 0px 512px 60px 513px;
   }
 }

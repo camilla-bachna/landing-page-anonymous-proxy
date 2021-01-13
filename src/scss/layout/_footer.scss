@@ -1,14 +1,14 @@
 .footer {
   background-color: $bg-color-footer;
-  @include frame(465px, 320px);
+  @include frame(465px, 100%);
   @include fonts(16px, 30px, normal);
   color: $color-white;
   font-family: $font-main;
   @media all and (min-width: 768px) {
-    @include frame(240px, 768px);
+    @include frame(240px, 100%);
   }
   @media all and (min-width: 1200px) {
-    @include frame(240px, 1280px);
+    @include frame(240px, 100%);
   }
   &__button {
     background-color: $bg-color-white;
@@ -57,13 +57,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -14.5px;
+    position: relative;
+    top: -45px;
     @media all and (min-width: 768px) {
       display: flex;
       flex-direction: row;
     }
     &--nav1 {
       text-transform: uppercase;
+      margin-top: 37px;
       margin-bottom: 30px;
       @media all and (min-width: 768px) {
         @include frame(150px, 210px);
@@ -140,11 +142,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     @include frame(60px, 210px);
-    margin: 30.5px 30px 142px 39px;
+    margin: 22px 30px 142px 39px;
   }
   @media all and (min-width: 1200px) {
     @include frame(60px, 159px);
-    margin: 30.5px 31px 135px 370px;
+    margin: 22px 31px 135px 370px;
   }
   &-2021 {
     @include frame(30px, 77px);
