@@ -70,9 +70,11 @@
   padding: 30px 0px 45px 15px;
   @media all and (min-width: 768px) {
     padding: 30px 39px 60px 39px;
+    @include frame(330px, 100%);
   }
   @media all and (min-width: 1200px) {
     padding: 60px 275px 60px 275px;
+    @include frame(360px, 100%);
   }
   &--insomnia {
     color: $color-lightblue;
