@@ -151,6 +151,38 @@
   }
 }
 
+// section Interview
+
+.main__sectionInterview{
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &--precio{
+      width:100%;
+      text-align: center;
+    }
+    &--premium{
+      width: 50%;
+      padding-left: 30px; 
+      text-align: left;
+    }
+    &--descuento{
+      width: 50%;
+      padding-right: 30px; 
+      text-align: right;
+    }
+  }
+}
+
 // section Reasons
 
 .main__sectionReasons {
