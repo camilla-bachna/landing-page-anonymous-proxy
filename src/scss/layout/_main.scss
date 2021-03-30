@@ -3,7 +3,7 @@
 .main__sectionAnonymous {
   position: relative;
   top: 0;
-  background: url("../images/cover-original.jpg");
+  background: url('../images/cover-original.jpg');
   background-size: cover;
   @include frame(100vh, 100%);
   display: flex;
@@ -147,38 +147,6 @@
     @media all and (min-width: 1200px) {
       @include frame(45px, 160px);
       margin: 0px 570px 0px 0px;
-    }
-  }
-}
-
-// section Interview
-
-.main__sectionInterview{
-  background-color: blue;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  @media all and (min-width: 768px) {
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    &--precio{
-      width:100%;
-      text-align: center;
-    }
-    &--premium{
-      width: 50%;
-      padding-left: 30px; 
-      text-align: left;
-    }
-    &--descuento{
-      width: 50%;
-      padding-right: 30px; 
-      text-align: right;
     }
   }
 }
